@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/No9/chrome-bus",
   "devDependencies": {
-    "launch-chrome-app": "^1.0.1"
+    "browserify": "^11.1.0",
+    "launch-chrome-app": "^1.0.1",
+    "standard": "^5.3.1"
   }
 }
