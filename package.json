@@ -1,0 +1,31 @@
+{
+  "name": "chrome-bus",
+  "version": "1.0.0",
+  "description": "Share an event emitter among chrome runtime components",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "standard index.js && browserify test/src/index.js -o test/chrome-app/index.js && node test/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/No9/chrome-bus"
+  },
+  "keywords": [
+    "chromiumify",
+    "eventemitter",
+    "chrome-app",
+    "browserify-tool"
+  ],
+  "author": "anton whalley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/No9/chrome-bus/issues"
+  },
+  "homepage": "https://github.com/No9/chrome-bus",
+  "devDependencies": {
+    "launch-chrome-app": "^1.0.1"
+  }
+}
