@@ -2,7 +2,7 @@
   "manifest_version": 2,
   
   "name": "chrome-bus",
-  "version": "0.0.1",
+  "version": "2.0.0",
   
   "app": {
     "background": {
@@ -12,8 +12,20 @@
     }
   },
   "permissions": [
-    "unlimitedStorage"
+    "unlimitedStorage",
+    "webview"
   ],
+  "webview": {
+    "partitions": [
+      {
+        "name": "wvevent",
+        "accessible_resources": [
+          "webview.html",
+          "webview.js"
+        ]
+      }
+    ]
+  },
   "sockets": {
     "tcp": {
       "connect": ["*:80"]

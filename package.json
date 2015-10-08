@@ -1,13 +1,13 @@
 {
   "name": "chrome-bus",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Share an event emitter among chrome runtime components",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "standard index.js && browserify test/src/index.js -o test/chrome-app/index.js && node test/runner.js"
+    "test": "standard index.js && browserify test/src/webview.js -o test/chrome-app/webview.js && browserify test/src/index.js -o test/chrome-app/index.js && node test/runner.js"
   },
   "repository": {
     "type": "git",
