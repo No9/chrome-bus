@@ -1,6 +1,6 @@
 {
   "name": "chrome-bus",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Share an event emitter among chrome runtime components",
   "main": "index.js",
   "directories": {
