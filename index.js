@@ -33,8 +33,8 @@ function ChromeBus (opts) {
   } else {
     this._key = opts.key || 'chrome-bus'
     chrome.runtime.onMessage.addListener(function (ev) { // eslint-disable-line
-        var value = JSON.parse(ev)
-        if (Array.isArray(value)) emit.apply(self, value)
+      var value = JSON.parse(ev)
+      if (Array.isArray(value)) emit.apply(self, value)
     })
   }
 }
